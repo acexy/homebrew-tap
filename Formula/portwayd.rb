@@ -1,8 +1,7 @@
-class Portway < Formula
-  desc "Secure reverse tunneling client"
+class Portwayd < Formula
+  desc "Secure reverse tunneling server"
   homepage "https://github.com/acexy/portway"
   license "Apache-2.0"
-  revision 1
 
   on_macos do
     on_arm do
@@ -29,10 +28,10 @@ class Portway < Formula
   end
 
   def install
-    bin.install "portway"
+    bin.install "portwayd"
   end
 
   test do
-    assert_match "portway v#{version}", shell_output("#{bin}/portway version")
+    assert_match "portwayd v#{version}", shell_output("#{bin}/portwayd version")
   end
 end

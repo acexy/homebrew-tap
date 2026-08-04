@@ -10,20 +10,27 @@ client and server. Install only the component required on each host.
 Install the client:
 
 ```bash
+brew trust --formula acexy/tap/portway
 brew install acexy/tap/portway
 ```
 
 Install the server:
 
 ```bash
+brew trust --formula acexy/tap/portwayd
 brew install acexy/tap/portwayd
 ```
 
 Install both components on the same host:
 
 ```bash
+brew trust --formula acexy/tap/portway acexy/tap/portwayd
 brew install acexy/tap/portway acexy/tap/portwayd
 ```
+
+Homebrew requires explicit trust before loading formulae from non-official taps.
+The commands above trust only the requested formulae rather than every current
+and future item in this tap.
 
 Upgrade installed components:
 

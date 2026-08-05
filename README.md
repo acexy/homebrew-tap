@@ -28,6 +28,25 @@ brew trust --formula acexy/tap/portway acexy/tap/portwayd
 brew install acexy/tap/portway acexy/tap/portwayd
 ```
 
+### Beta releases
+
+Beta releases use separate formulae and do not replace the stable release during
+`brew upgrade`. Install the beta client or server with:
+
+```bash
+brew trust --formula acexy/tap/portway-beta acexy/tap/portwayd-beta
+brew install acexy/tap/portway-beta acexy/tap/portwayd-beta
+```
+
+The stable and beta formulae install the same command names and therefore cannot
+be active at the same time. Remove the installed channel before switching. To
+return to the stable release:
+
+```bash
+brew uninstall portway-beta portwayd-beta
+brew install acexy/tap/portway acexy/tap/portwayd
+```
+
 Homebrew requires explicit trust before loading formulae from non-official taps.
 The commands above trust only the requested formulae rather than every current
 and future item in this tap.

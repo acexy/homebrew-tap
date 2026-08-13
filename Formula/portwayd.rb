@@ -5,25 +5,25 @@ class Portwayd < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/acexy/portway/releases/download/v0.1.2/portway-darwin-arm64.tar"
-      sha256 "df9d83070356a7111297f7c5056a571eb1c15f99fbaa18054a3c52363e72891a"
+      url "https://github.com/acexy/portway/releases/download/v0.1.3/portway-darwin-arm64.tar"
+      sha256 "d3a57716d6acdb8d0b5ef11909e6aff69b3ab6fdf4bb485ff48e83ac8e524dbb"
     end
 
     on_intel do
-      url "https://github.com/acexy/portway/releases/download/v0.1.2/portway-darwin-amd64.tar"
-      sha256 "994f2002cb02b931d3d1a9f6a1a217c4fc9b8ced107460c7d01768dcf2cd185f"
+      url "https://github.com/acexy/portway/releases/download/v0.1.3/portway-darwin-amd64.tar"
+      sha256 "66524242d54742b366ec5266b77328ab2f38da47775f9d7b16c8bc78151e9f86"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/acexy/portway/releases/download/v0.1.2/portway-linux-arm64.tar"
-      sha256 "ad52973f57cb9b4b487ce461c98f3bb4e69fbf51bb93a6701de7983e6e5c017a"
+      url "https://github.com/acexy/portway/releases/download/v0.1.3/portway-linux-arm64.tar"
+      sha256 "fa2660117fbe40567c9553e6aac3de82999a3ae3084d5f9d881a0b9fde728866"
     end
 
     on_intel do
-      url "https://github.com/acexy/portway/releases/download/v0.1.2/portway-linux-amd64.tar"
-      sha256 "8e3ff60e3badb231031ed52ccdf2d5f8bdf12368d6ce59e34fb8a46127c53dc2"
+      url "https://github.com/acexy/portway/releases/download/v0.1.3/portway-linux-amd64.tar"
+      sha256 "eabc006f22e5c1d2fb558c1e221fd63721053c8ccdb1d0ed48ee8c7411b35b7c"
     end
   end
 

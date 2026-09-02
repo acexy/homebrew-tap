@@ -1,31 +1,31 @@
 class PortwayBeta < Formula
   desc "Secure reverse tunneling client (beta)"
   homepage "https://github.com/acexy/portway"
-  version "0.1.6.RC.1"
+  version "0.1.7.beta"
   license "Apache-2.0"
   conflicts_with "portway", because: "both install the portway binary"
 
   on_macos do
     on_arm do
-      url "https://github.com/acexy/portway/releases/download/v0.1.6.RC.1/portway-darwin-arm64.tar"
-      sha256 "2861b713977fe2402192bdf63815764d5f68e5220d81ba13218e25f384ba6b60"
+      url "https://github.com/acexy/portway/releases/download/v0.1.7.beta/portway-darwin-arm64.tar"
+      sha256 "869da2a9d18d84217213f5f6aac3cfb92116d1548e4fcf28938af930db13fff6"
     end
 
     on_intel do
-      url "https://github.com/acexy/portway/releases/download/v0.1.6.RC.1/portway-darwin-amd64.tar"
-      sha256 "bf7296d5f623f1e86a2bd005706759eff25fecf1fb84770624d2157117f7a407"
+      url "https://github.com/acexy/portway/releases/download/v0.1.7.beta/portway-darwin-amd64.tar"
+      sha256 "2bd7aa0391ad840440f818d3e902cd4fd88ec409ccd663e81477f30948639857"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/acexy/portway/releases/download/v0.1.6.RC.1/portway-linux-arm64.tar"
-      sha256 "2861b713977fe2402192bdf63815764d5f68e5220d81ba13218e25f384ba6b60"
+      url "https://github.com/acexy/portway/releases/download/v0.1.7.beta/portway-linux-arm64.tar"
+      sha256 "32e7adf27105814f2f5c463a55e2d861e8cf1b6bc65dbaa6eb978d0a178fa564"
     end
 
     on_intel do
-      url "https://github.com/acexy/portway/releases/download/v0.1.6.RC.1/portway-linux-amd64.tar"
-      sha256 "1e9ec8f095a67d2920eb26222a2f7995133e4599af3abb861ae9f2fa79fb5018"
+      url "https://github.com/acexy/portway/releases/download/v0.1.7.beta/portway-linux-amd64.tar"
+      sha256 "fc42e8ca6343e0dd06db153ea060a0b404edd6b5c33b16963bf1cb93de6072ce"
     end
   end
 

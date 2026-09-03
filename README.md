@@ -42,7 +42,7 @@ Homebrew may require explicit trust before loading formulae from non-official
 taps. In that case, trust only the formulae you intend to install:
 
 ```bash
-brew trust --formula acexy/tap/portway
+brew trust --formula acexy/tap
 brew install acexy/tap/portway
 ```
 

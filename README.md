@@ -1,73 +1,54 @@
 # Acexy Homebrew Tap
 
-This tap distributes stable releases of Acexy command-line projects.
+This is Acexy's personal public [Homebrew tap](https://brew.sh/), providing
+Homebrew formulae for selected open-source projects and their releases.
 
-## Portway
+## Available resources
 
-[Portway](https://github.com/acexy/portway) is a secure reverse tunneling
-client and server. Install only the component required on each host.
+| Resource | Formula | Project | Purpose |
+| --- | --- | --- | --- |
+| Portway Release | `portway` | [acexy/portway](https://github.com/acexy/portway) | Stable Portway client for secure reverse tunneling. |
+| Portway Release | `portwayd` | [acexy/portway](https://github.com/acexy/portway) | Stable Portway server for secure reverse tunneling. |
+| Portway Beta Release | `portway-beta` | [acexy/portway](https://github.com/acexy/portway) | Beta Portway client for testing upcoming releases. |
+| Portway Beta Release | `portwayd-beta` | [acexy/portway](https://github.com/acexy/portway) | Beta Portway server for testing upcoming releases. |
 
-Install the client:
+The client and server formulae install the `portway` and `portwayd` commands,
+respectively. Stable and beta formulae use the same command names within each
+component and therefore cannot be installed alongside their corresponding
+channel at the same time.
+
+## Installation example
+
+The following example shows how to add this tap and install a resource:
+
+```bash
+brew tap acexy/tap
+brew install acexy/tap/portway
+```
+
+For example, to install another formula from the resource list:
+
+```bash
+brew install acexy/tap/portwayd
+```
+
+To install the beta channel instead:
+
+```bash
+brew install acexy/tap/portway-beta acexy/tap/portwayd-beta
+```
+
+Homebrew may require explicit trust before loading formulae from non-official
+taps. In that case, trust only the formulae you intend to install:
 
 ```bash
 brew trust --formula acexy/tap/portway
 brew install acexy/tap/portway
 ```
 
-Install the server:
-
-```bash
-brew trust --formula acexy/tap/portwayd
-brew install acexy/tap/portwayd
-```
-
-Install both components on the same host:
-
-```bash
-brew trust --formula acexy/tap/portway acexy/tap/portwayd
-brew install acexy/tap/portway acexy/tap/portwayd
-```
-
-### Beta releases
-
-Beta releases use separate formulae and do not replace the stable release during
-`brew upgrade`. Install the beta client or server with:
-
-```bash
-brew trust --formula acexy/tap/portway-beta acexy/tap/portwayd-beta
-brew install acexy/tap/portway-beta acexy/tap/portwayd-beta
-```
-
-The stable and beta formulae install the same command names and therefore cannot
-be active at the same time. Remove the installed channel before switching. To
-return to the stable release:
-
-```bash
-brew uninstall portway-beta portwayd-beta
-brew install acexy/tap/portway acexy/tap/portwayd
-```
-
-Homebrew requires explicit trust before loading formulae from non-official taps.
-The commands above trust only the requested formulae rather than every current
-and future item in this tap.
-
-Upgrade installed components:
+## Updates
 
 ```bash
 brew update
-brew upgrade portway portwayd
+brew upgrade
 ```
-
-Users who installed the original combined `portway` formula should migrate once:
-
-```bash
-brew update
-brew upgrade portway
-brew install acexy/tap/portwayd
-```
-
-Each formula only installs its matching command and does not create or overwrite
-client or server configuration files.
-Follow the [Portway configuration documentation](https://github.com/acexy/portway#configuration)
-to create deployment-specific configuration. Homebrew service definitions are
-not provided in the initial release.

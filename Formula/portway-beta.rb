@@ -1,31 +1,31 @@
 class PortwayBeta < Formula
   desc "Lightweight connectivity through Proxy, Forward, and VNet modes (beta)"
   homepage "https://github.com/acexy/portway"
-  version "0.1.10.beta"
+  version "0.1.10.beta.2"
   license "Apache-2.0"
   conflicts_with "portway", because: "both install the portway binary"
 
   on_macos do
     on_arm do
-      url "https://github.com/acexy/portway/releases/download/v0.1.10.beta/portway-darwin-arm64.tar"
-      sha256 "7eb2a61f6c98cca80002b147e555d450e4dfd25647bd80d43c05f57aef1149c2"
+      url "https://github.com/acexy/portway/releases/download/v0.1.10.beta.2/portway-darwin-arm64.tar"
+      sha256 "ad0ee20081cd1ab248c4ba64de84adc4d0a3bdff0da8b51dac77142ba7bffb5c"
     end
 
     on_intel do
-      url "https://github.com/acexy/portway/releases/download/v0.1.10.beta/portway-darwin-amd64.tar"
-      sha256 "aceb63621d5a886424a4211eec1f32bc9fdb307d4d8522369d80519994466c65"
+      url "https://github.com/acexy/portway/releases/download/v0.1.10.beta.2/portway-darwin-amd64.tar"
+      sha256 "b0944c589d22994782d83ae5f4eda7521d5c1ea17fb6f36f50e679e383fc92df"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/acexy/portway/releases/download/v0.1.10.beta/portway-linux-arm64.tar"
-      sha256 "11157e3c5b358acb685207d7bd626bddb7a45a32c3d325cd7ba6d708543b08a7"
+      url "https://github.com/acexy/portway/releases/download/v0.1.10.beta.2/portway-linux-arm64.tar"
+      sha256 "db6f44b56b892ebecc327f8079e532f73602f0a77a9cca735dfe620582bfc451"
     end
 
     on_intel do
-      url "https://github.com/acexy/portway/releases/download/v0.1.10.beta/portway-linux-amd64.tar"
-      sha256 "cd85fb457784527b34543f296736301e96042e7b22bf32d2800e6e2cf9d5cb2c"
+      url "https://github.com/acexy/portway/releases/download/v0.1.10.beta.2/portway-linux-amd64.tar"
+      sha256 "810bc2b9aa1166ce5b76ca108c0609fff1305d23c0ada59136c517642f73d9a3"
     end
   end
 
